@@ -1,3 +1,0 @@
-# SpengDash
-
-Spengergasse Schulprojekt
