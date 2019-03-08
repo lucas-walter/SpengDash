@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { TermineComponent } from './termine/termine.component';
 import { StundenplanComponent } from './stundenplan/stundenplan.component';
 import { RaumplanerComponent } from './raumplaner/raumplaner.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { DatenschutzComponent } from './datenschutz/datenschutz.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { RaumplanerComponent } from './raumplaner/raumplaner.component';
     LoginComponent,
     TermineComponent,
     StundenplanComponent,
-    RaumplanerComponent
+    RaumplanerComponent,
+    ImpressumComponent,
+    DatenschutzComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +27,9 @@ import { RaumplanerComponent } from './raumplaner/raumplaner.component';
       {path:'login', component: LoginComponent},
       {path:'termine', component: TermineComponent},
       {path:'stundenplan', component: StundenplanComponent},
-      {path:'raumplaner', component: RaumplanerComponent}
+      {path:'raumplaner', component: RaumplanerComponent},
+      {path:'impressum', component: ImpressumComponent},
+      {path:'datenschutz', component: DatenschutzComponent}
     ])
   ],
   providers: [],
