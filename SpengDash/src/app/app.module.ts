@@ -10,6 +10,9 @@ import { StundenplanComponent } from './stundenplan/stundenplan.component';
 import { RaumplanerComponent } from './raumplaner/raumplaner.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { DatenschutzComponent } from './datenschutz/datenschutz.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { StartComponent } from './start/start.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -19,17 +22,23 @@ import { DatenschutzComponent } from './datenschutz/datenschutz.component';
     StundenplanComponent,
     RaumplanerComponent,
     ImpressumComponent,
-    DatenschutzComponent
+    DatenschutzComponent,
+    NotFoundComponent,
+    StartComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
+      {path:'', component: StartComponent},
       {path:'login', component: LoginComponent},
       {path:'termine', component: TermineComponent},
       {path:'stundenplan', component: StundenplanComponent},
       {path:'raumplaner', component: RaumplanerComponent},
       {path:'impressum', component: ImpressumComponent},
-      {path:'datenschutz', component: DatenschutzComponent}
+      {path:'datenschutz', component: DatenschutzComponent},
+      {path:'faq', component: FaqComponent},
+      {path: '**', component: NotFoundComponent }
     ])
   ],
   providers: [],

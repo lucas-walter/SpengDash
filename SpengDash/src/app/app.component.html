@@ -9,16 +9,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="navbar-nav mr-auto">
     <li class="nav-item">
-    <a class="nav-link" routerLink="/">Home</a>
+    <a class="nav-link" routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Home</a>
     </li>
     <li class="nav-item">
-    <a class="nav-link" routerLink="/termine">Termine</a>
+    <a class="nav-link" routerLink="/termine" [routerLinkActive]="['active']">Termine</a>
     </li>
     <li class="nav-item">
-    <a class="nav-link" routerLink="/raumplaner">Raumplaner</a>
+    <a class="nav-link" routerLink="/raumplaner" [routerLinkActive]="['active']">Raumplaner</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" routerLink="/stundenplan">Stundenplan</a>
+      <a class="nav-link" routerLink="/stundenplan" [routerLinkActive]="['active']">Stundenplan</a>
       </li>
   </ul>
   <form class="form-inline my-2 my-lg-0">
@@ -32,6 +32,7 @@
 <footer class="footer">
   <div class="container">
     <a class="navLink text-muted" routerLink="/impressum">Impressum</a> |
-    <a class="navLink text-muted" routerLink="/datenschutz">Datenschutz</a>
+    <a class="navLink text-muted" routerLink="/datenschutz">Datenschutz</a> |
+    <a class="navLink text-muted" routerLink="/faq">FAQ</a>
   </div>
 </footer>
