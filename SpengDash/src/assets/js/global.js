@@ -3,3 +3,16 @@ $('.navbar-nav li a').on('click', function(){
         $('.navbar-collapse').collapse('hide');
     }
 });
+
+$(function () {
+    if (localStorage.getItem("user_id")) {
+        $("#notLoggedIn").hide();
+        $("#loggedIn").show();
+        $('#loggedInUsername').text(localStorage.getItem("user_name"));
+    }
+});
+
+function logOut() {
+    localStorage.clear();
+    location.reload();
+}

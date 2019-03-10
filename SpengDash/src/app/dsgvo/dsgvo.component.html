@@ -1,0 +1,46 @@
+<h1>Datenschutz-Center</h1>
+<p>Um Transparenz mit Benutzern zu ermöglichen, lässt Sie das Datenschutz-Center
+  Ihren Account löschen oder Ihre Daten anfordern.
+</p>
+
+<button type="button" class="btn btn-primary">Kopie der persönlichen Daten abrufen</button>
+<p>Rufen Sie eine Kopie Ihrer persönlichen Daten in gängigen Dateiformaten ab.</p>
+<br><br>
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteAccountModal">Meinen
+  Benutzeraccount löschen</button>
+<p>Diese Aktion ist irreversibel und wird den gesamten Account mit seinen persönlichen Terminen löschen.<br>
+  Termine, welche mit anderen Benutzern geteilt wurden, werden für diese noch immer sichtbar sein.</p>
+
+  <div class="alert alert-primary" role="alert">
+      Ihre Daten werden ausschließlich gemäß der <a routerLink="/datenschutz" class="alert-link">Datenschutzerklärung</a> verwendet.
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="deleteAccountModal" tabindex="-1" role="dialog" aria-labelledby="deleteAccountModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteAccountModalLabel">Benutzeraccount löschen</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <p>Diese Aktion ist irreversibel und wird den gesamten Account mit seinen persönlichen Terminen löschen.<br>
+            Termine, welche mit anderen Benutzern geteilt wurden, werden für diese noch immer sichtbar sein.</p>
+
+            <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Bitte bestätigen Sie die Löschung mit Ihrem Passwort:</label>
+                  <input type="password" class="form-control" id="password">
+                </div>
+              </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        <button type="button" class="btn btn-danger">Account unwiederruflich löschen</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -22,9 +22,18 @@
         <a class="nav-link" routerLink="/stundenplan" [routerLinkActive]="['active']">Stundenplan</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <form class="form-inline my-2 my-lg-0" id="notLoggedIn">
       <button type='button' class="btn btn-outline-success my-2 my-sm-0" routerLink="/login">Anmelden</button>
     </form>
+    <li class="nav-item dropdown form-inline my-2 my-lg-0" id="loggedIn" style="display: none;">
+      <a class="nav-link dropdown-toggle" id="loggedInUsername" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loggedInUsername">
+        <a class="dropdown-item" onclick="logOut()">Abmelden</a>
+        <a class="dropdown-item" routerLink="/settings">Einstellungen</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" routerLink="/dsgvo">Datenschutz-Center</a>
+      </div>
+    </li>
   </div>
 </nav>
 <div id="main">

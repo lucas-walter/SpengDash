@@ -13,6 +13,8 @@ import { DatenschutzComponent } from './datenschutz/datenschutz.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { StartComponent } from './start/start.component';
 import { FaqComponent } from './faq/faq.component';
+import { DsgvoComponent } from './dsgvo/dsgvo.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { FaqComponent } from './faq/faq.component';
     DatenschutzComponent,
     NotFoundComponent,
     StartComponent,
-    FaqComponent
+    FaqComponent,
+    DsgvoComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +42,7 @@ import { FaqComponent } from './faq/faq.component';
       {path:'impressum', component: ImpressumComponent},
       {path:'datenschutz', component: DatenschutzComponent},
       {path:'faq', component: FaqComponent},
+      {path:'dsgvo', component: DsgvoComponent},
       {path: '**', component: NotFoundComponent }
     ])
   ],
