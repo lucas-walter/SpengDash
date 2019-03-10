@@ -43,6 +43,7 @@ import { SettingsComponent } from './settings/settings.component';
       {path:'datenschutz', component: DatenschutzComponent},
       {path:'faq', component: FaqComponent},
       {path:'dsgvo', component: DsgvoComponent},
+      {path:'settings', component: SettingsComponent},
       {path: '**', component: NotFoundComponent }
     ])
   ],

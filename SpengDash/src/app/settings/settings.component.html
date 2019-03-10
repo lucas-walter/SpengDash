@@ -1,3 +1,46 @@
-<p>
-  settings works!
-</p>
+<form (submit)="editName($event)">
+  <div class="form-group">
+    <label for="nameInput">Name</label>
+    <input type="name" class="form-control" id="nameInput">
+  </div>
+  <button type="submit" class="btn btn-primary">Änderungen speichern</button>
+</form><br>
+<form>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#changePasswordModal">Passwort ändern</button>
+</form>
+
+<!-- Modal -->
+<div class="modal fade" id="changePasswordModal" tabindex="-1" role="dialog" aria-labelledby="changePasswordModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="changePasswordModalLabel">Passwort ändern</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Mit dieser Funktion können Sie Ihr Passwort ändern.<br>Dies erstellt auch einen neuen API-Token.</p>
+        <form (submit)="editPass($event)">
+          <div class="form-group">
+            <label for="oldPassword" class="col-form-label">Altes Passwort:</label>
+            <input type="password" class="form-control" id="oldPassword">
+          </div>
+          <div class="form-group">
+            <label for="newPassword1" class="col-form-label">Neues Passwort:</label>
+            <input type="password" class="form-control" id="newPassword1">
+          </div>
+          <div class="form-group">
+            <label for="newPassword2" class="col-form-label">Neues Passwort bestätigen:</label>
+            <input type="password" class="form-control" id="newPassword2">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        <button type="button" class="btn btn-danger">Passwort ändern</button>
+      </div>
+    </div>
+  </div>
+</div>
