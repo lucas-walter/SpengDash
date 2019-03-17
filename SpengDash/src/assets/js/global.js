@@ -4,13 +4,16 @@ $('.navbar-nav li a').on('click', function(){
     }
 });
 
-$(function () {
+$(initFields);
+
+function initFields() {
     if (localStorage.getItem("user_id")) {
         $("#notLoggedIn").hide();
         $("#loggedIn").show();
         $('#loggedInUsername').text(localStorage.getItem("user_name"));
+        $("#nameInput").text(localStorage.getItem("user_name"));
     }
-});
+}
 
 function logOut() {
     localStorage.clear();
