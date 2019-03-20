@@ -1,20 +1,20 @@
 <form (submit)="editName($event)">
   <div class="form-group">
       <div class="alert alert-danger" role="alert" id="editNameErrMsg" hidden>
-        <h4 class="alert-heading">Fehler bei der Änderung</h4>
+        <h4 class="alert-heading" i18n="Edit Name Error@@errAtChange">Fehler bei der Änderung</h4>
         <p id="editNameErrOut"></p>
       </div>
       <div class="alert alert-success" role="alert" id="editNameSuccMsg" hidden>
-        <h4 class="alert-heading">Name erfolgreich geändert</h4>
+        <h4 class="alert-heading" i18n="Edit Name Success@@changedNameSuccess">Name erfolgreich geändert</h4>
         <p id="editNameSuccOut"></p>
       </div>
-    <label for="nameInput">Name</label>
+    <label for="nameInput" i18n="Input@@name">Name</label>
     <input type="name" class="form-control" id="nameInput" value="{{getUsername()}}">
   </div>
-  <button type="submit" class="btn btn-primary">Änderungen speichern</button>
+  <button type="submit" class="btn btn-primary" i18n="Save Name@@saveChanges">Änderungen speichern</button>
 </form><br>
 <form>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#changePasswordModal">Passwort ändern</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#changePasswordModal" i18n="Button@@changePassword">Passwort ändern</button>
 </form>
 
 <!-- Modal -->
@@ -23,38 +23,38 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="changePasswordModalLabel">Passwort ändern</h5>
+        <h5 class="modal-title" id="changePasswordModalLabel" i18n="Change Password Label@@changePassword">Passwort ändern</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <form (submit)="editPass($event)">
         <div class="modal-body">
-        <p>Mit dieser Funktion können Sie Ihr Passwort ändern.<br>Dies erstellt auch einen neuen API-Token.</p>
+        <p i18n="Explanation Pass Change@@Settings-ExplanPassChange">Mit dieser Funktion können Sie Ihr Passwort ändern.<br>Dies erstellt auch einen neuen API-Token.</p>
         <div class="alert alert-danger" role="alert" id="editPwErrMsg" hidden>
-          <h4 class="alert-heading">Fehler bei der Änderung</h4>
+          <h4 class="alert-heading" i18n="Change Pass Error@@errAtChange">Fehler bei der Änderung</h4>
           <p id="editPwErrOut"></p>
         </div>
         <div class="alert alert-success" role="alert" id="editPwSuccMsg" hidden>
-          <h4 class="alert-heading">Passwort erfolgreich geändert</h4>
+          <h4 class="alert-heading" i18n="Change Pass Success@@passChangedSucc">Passwort erfolgreich geändert</h4>
           <p id="editPwSuccOut"></p>
         </div>
         <div class="form-group">
-            <label for="oldPassword" class="col-form-label">Altes Passwort:</label>
+            <label for="oldPassword" class="col-form-label" i18n="Old Pass Label@@oldPassword">Altes Passwort:</label>
             <input type="password" class="form-control" id="oldPassword">
           </div>
           <div class="form-group">
-            <label for="newPassword1" class="col-form-label">Neues Passwort:</label>
+            <label for="newPassword1" class="col-form-label" i18n="New Pass Label@@newPassword">Neues Passwort:</label>
             <input type="password" class="form-control" id="newPassword1">
           </div>
           <div class="form-group">
-            <label for="newPassword2" class="col-form-label">Neues Passwort bestätigen:</label>
+            <label for="newPassword2" class="col-form-label" i18n="Confirm New Pass@@newPasswordConfirm">Neues Passwort bestätigen:</label>
             <input type="password" class="form-control" id="newPassword2">
           </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
-        <button type="submit" class="btn btn-danger">Passwort ändern</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" i18n="Close@@close">Schließen</button>
+        <button type="submit" class="btn btn-danger" i18n="Change Pass Button@@changePassword">Passwort ändern</button>
       </div>
     </form>
     </div>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="de-AT" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="home" datatype="html">
+        <source>Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <note priority="1" from="description">Page Name</note>
+      </trans-unit>
+      <trans-unit id="tasks" datatype="html">
+        <source>Termine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <note priority="1" from="description">Page Name</note>
+      </trans-unit>
+      <trans-unit id="planner" datatype="html">
+        <source>Raumplaner</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <note priority="1" from="description">Page Name</note>
+      </trans-unit>
+      <trans-unit id="timetable" datatype="html">
+        <source>Stundenplan</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <note priority="1" from="description">Page Name</note>
+      </trans-unit>
+      <trans-unit id="login" datatype="html">
+        <source>Anmelden</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Log in button</note>
+      </trans-unit>
+      <trans-unit id="logout" datatype="html">
+        <source>Abmelden</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">Log Out Button</note>
+      </trans-unit>
+      <trans-unit id="settings" datatype="html">
+        <source>Einstellungen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description">Settings Option</note>
+      </trans-unit>
+      <trans-unit id="GDPRCenter" datatype="html">
+        <source>Datenschutz-Center</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/dsgvo/dsgvo.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Page Name</note>
+      </trans-unit>
+      <trans-unit id="faq" datatype="html">
+        <source>FAQ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <note priority="1" from="description">Page Name</note>
+      </trans-unit>
+      <trans-unit id="imprint" datatype="html">
+        <source>Impressum</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <note priority="1" from="description">Page Name</note>
+      </trans-unit>
+      <trans-unit id="dataProtection" datatype="html">
+        <source>Datenschutz</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <note priority="1" from="description">Page Name</note>
+      </trans-unit>
+      <trans-unit id="spengergasseAddr" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Spengergasse 20<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Wien, Österreich</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+        <note priority="1" from="description">Address</note>
+      </trans-unit>
+      <trans-unit id="Footer-aboutSite" datatype="html">
+        <source>
+      <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Über die Website<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+      Diese Website hilft Ihnen, Ihren Schulalltag zu erleichtern.
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <note priority="1" from="description">Footer Website Explanation</note>
+      </trans-unit>
+      <trans-unit id="Login-Header" datatype="html">
+        <source>SpengDash Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">Login Header</note>
+      </trans-unit>
+      <trans-unit id="errorLoggingIn" datatype="html">
+        <source>Fehler bei der Anmeldung</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Login Error</note>
+      </trans-unit>
+      <trans-unit id="username" datatype="html">
+        <source>Username</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Username Label</note>
+      </trans-unit>
+      <trans-unit id="password" datatype="html">
+        <source>Passwort</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Password Label</note>
+      </trans-unit>
+      <trans-unit id="rememberPass" datatype="html">
+        <source>
+        <x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input/&gt;"/> Speichern
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">Save Password Checkbox</note>
+      </trans-unit>
+      <trans-unit id="Login-Help" datatype="html">
+        <source>
+      Probleme bei der Anmeldung? Klicke <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>hier<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">Helptext Login Page</note>
+      </trans-unit>
+      <trans-unit id="404-Text" datatype="html">
+        <source>
+    Seite maya
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/not-found/not-found.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Funny 404 Text hahaha</note>
+      </trans-unit>
+      <trans-unit id="GDPR-Explanation" datatype="html">
+        <source>Um Transparenz mit Benutzern zu ermöglichen, lässt Sie das Datenschutz-Center
+  Ihren Account löschen oder Ihre Daten anfordern.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/dsgvo/dsgvo.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">GDPR Center Explanation</note>
+      </trans-unit>
+      <trans-unit id="GDPR-ReqData" datatype="html">
+        <source>Kopie der persönlichen Daten abrufen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/dsgvo/dsgvo.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">GDPR Request Personal Data Button</note>
+      </trans-unit>
+      <trans-unit id="GDPR-GetDataInFormats" datatype="html">
+        <source>Rufen Sie eine Kopie Ihrer persönlichen Daten in gängigen Dateiformaten ab.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/dsgvo/dsgvo.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">GDPR Request Personal Data Label</note>
+      </trans-unit>
+      <trans-unit id="deleteMyAccount" datatype="html">
+        <source>Meinen
+  Benutzeraccount löschen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/dsgvo/dsgvo.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">GDPR Delete Account Button</note>
+      </trans-unit>
+      <trans-unit id="GDPR-DelAccExpl" datatype="html">
+        <source>Diese Aktion ist irreversibel und wird den gesamten Account mit seinen persönlichen Terminen löschen.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+  Termine, welche mit anderen Benutzern geteilt wurden, werden für diese noch immer sichtbar sein.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/dsgvo/dsgvo.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">GDPR Delete Account Label</note>
+      </trans-unit>
+      <trans-unit id="GDPR-UsageOfData" datatype="html">
+        <source>
+      Ihre Daten werden ausschließlich gemäß der <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Datenschutzerklärung<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> verwendet.
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/dsgvo/dsgvo.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">GDPR Data Usage Explanation</note>
+      </trans-unit>
+      <trans-unit id="deleteAccount" datatype="html">
+        <source>Benutzeraccount löschen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/dsgvo/dsgvo.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">GDPR Delete Account Button</note>
+      </trans-unit>
+      <trans-unit id="GDPR-DelAccFinalExpl" datatype="html">
+        <source>Diese Aktion ist irreversibel und wird den gesamten Account mit seinen persönlichen Terminen löschen.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+            Termine, welche mit anderen Benutzern geteilt wurden, werden für diese noch immer sichtbar sein.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/dsgvo/dsgvo.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">GDPR Delete Account Explanation</note>
+      </trans-unit>
+      <trans-unit id="confirmDelWithPass" datatype="html">
+        <source>Bitte bestätigen Sie die Löschung mit Ihrem Passwort:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/dsgvo/dsgvo.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">GDPR Confirm Deletion with Password</note>
+      </trans-unit>
+      <trans-unit id="close" datatype="html">
+        <source>Schließen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/dsgvo/dsgvo.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/settings/settings.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <note priority="1" from="description">Close Modal</note>
+      </trans-unit>
+      <trans-unit id="GDPR-DelAccFinal" datatype="html">
+        <source>Account unwiederruflich löschen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/dsgvo/dsgvo.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description">GDPR Delete Final Confirmation</note>
+      </trans-unit>
+      <trans-unit id="errAtChange" datatype="html">
+        <source>Fehler bei der Änderung</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/settings/settings.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/settings/settings.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">Edit Name Error</note>
+      </trans-unit>
+      <trans-unit id="changedNameSuccess" datatype="html">
+        <source>Name erfolgreich geändert</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/settings/settings.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Edit Name Success</note>
+      </trans-unit>
+      <trans-unit id="name" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/settings/settings.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Input</note>
+      </trans-unit>
+      <trans-unit id="saveChanges" datatype="html">
+        <source>Änderungen speichern</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/settings/settings.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">Save Name</note>
+      </trans-unit>
+      <trans-unit id="changePassword" datatype="html">
+        <source>Passwort ändern</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/settings/settings.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/settings/settings.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/settings/settings.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <note priority="1" from="description">Button</note>
+      </trans-unit>
+      <trans-unit id="Settings-ExplanPassChange" datatype="html">
+        <source>Mit dieser Funktion können Sie Ihr Passwort ändern.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Dies erstellt auch einen neuen API-Token.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/settings/settings.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="description">Explanation Pass Change</note>
+      </trans-unit>
+      <trans-unit id="passChangedSucc" datatype="html">
+        <source>Passwort erfolgreich geändert</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/settings/settings.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <note priority="1" from="description">Change Pass Success</note>
+      </trans-unit>
+      <trans-unit id="oldPassword" datatype="html">
+        <source>Altes Passwort:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/settings/settings.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note priority="1" from="description">Old Pass Label</note>
+      </trans-unit>
+      <trans-unit id="newPassword" datatype="html">
+        <source>Neues Passwort:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/settings/settings.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <note priority="1" from="description">New Pass Label</note>
+      </trans-unit>
+      <trans-unit id="newPasswordConfirm" datatype="html">
+        <source>Neues Passwort bestätigen:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/settings/settings.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <note priority="1" from="description">Confirm New Pass</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

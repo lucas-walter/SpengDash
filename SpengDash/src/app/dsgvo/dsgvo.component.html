@@ -1,17 +1,17 @@
-<h1>Datenschutz-Center</h1>
-<p>Um Transparenz mit Benutzern zu ermöglichen, lässt Sie das Datenschutz-Center
+<h1 i18n="GDPR Center Header@@GDPRCenter">Datenschutz-Center</h1>
+<p i18n="GDPR Center Explanation@@GDPR-Explanation">Um Transparenz mit Benutzern zu ermöglichen, lässt Sie das Datenschutz-Center
   Ihren Account löschen oder Ihre Daten anfordern.
 </p>
 
-<button type="button" class="btn btn-primary">Kopie der persönlichen Daten abrufen</button>
-<p>Rufen Sie eine Kopie Ihrer persönlichen Daten in gängigen Dateiformaten ab.</p>
+<button type="button" class="btn btn-primary" i18n="GDPR Request Personal Data Button@@GDPR-ReqData">Kopie der persönlichen Daten abrufen</button>
+<p i18n="GDPR Request Personal Data Label@@GDPR-GetDataInFormats">Rufen Sie eine Kopie Ihrer persönlichen Daten in gängigen Dateiformaten ab.</p>
 <br><br>
-<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteAccountModal">Meinen
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteAccountModal" i18n="GDPR Delete Account Button@@deleteMyAccount">Meinen
   Benutzeraccount löschen</button>
-<p>Diese Aktion ist irreversibel und wird den gesamten Account mit seinen persönlichen Terminen löschen.<br>
+<p i18n="GDPR Delete Account Label@@GDPR-DelAccExpl">Diese Aktion ist irreversibel und wird den gesamten Account mit seinen persönlichen Terminen löschen.<br>
   Termine, welche mit anderen Benutzern geteilt wurden, werden für diese noch immer sichtbar sein.</p>
 
-  <div class="alert alert-primary" role="alert">
+  <div class="alert alert-primary" role="alert" i18n="GDPR Data Usage Explanation@@GDPR-UsageOfData">
       Ihre Daten werden ausschließlich gemäß der <a routerLink="/datenschutz" class="alert-link">Datenschutzerklärung</a> verwendet.
   </div>
 
@@ -21,25 +21,25 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="deleteAccountModalLabel">Benutzeraccount löschen</h5>
+        <h5 class="modal-title" id="deleteAccountModalLabel" i18n="GDPR Delete Account Button@@deleteAccount">Benutzeraccount löschen</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-          <p>Diese Aktion ist irreversibel und wird den gesamten Account mit seinen persönlichen Terminen löschen.<br>
+          <p i18n="GDPR Delete Account Explanation@@GDPR-DelAccFinalExpl">Diese Aktion ist irreversibel und wird den gesamten Account mit seinen persönlichen Terminen löschen.<br>
             Termine, welche mit anderen Benutzern geteilt wurden, werden für diese noch immer sichtbar sein.</p>
 
             <form>
                 <div class="form-group">
-                  <label for="recipient-name" class="col-form-label">Bitte bestätigen Sie die Löschung mit Ihrem Passwort:</label>
+                  <label for="recipient-name" class="col-form-label" i18n="GDPR Confirm Deletion with Password@@confirmDelWithPass">Bitte bestätigen Sie die Löschung mit Ihrem Passwort:</label>
                   <input type="password" class="form-control" id="password">
                 </div>
               </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
-        <button type="button" class="btn btn-danger">Account unwiederruflich löschen</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" i18n="Close Modal@@close">Schließen</button>
+        <button type="button" class="btn btn-danger" i18n="GDPR Delete Final Confirmation@@GDPR-DelAccFinal">Account unwiederruflich löschen</button>
       </div>
     </div>
   </div>

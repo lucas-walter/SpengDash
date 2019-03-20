@@ -1,24 +1,24 @@
 <div id="formWrapper">
   <form class="form-signin" id="loginForm" (submit)="loginUser($event)">
-    <h1 class="h3 mb-3 font-weight-normal">SpengDash Login</h1>
+    <h1 class="h3 mb-3 font-weight-normal" i18n="Login Header@@Login-Header">SpengDash Login</h1>
 
     <div class="alert alert-danger" role="alert" id="errMsg" hidden>
-      <h4 class="alert-heading">Fehler bei der Anmeldung</h4>
+      <h4 class="alert-heading" i18n="Login Error@@errorLoggingIn">Fehler bei der Anmeldung</h4>
       <p id="errOut"></p>
     </div>
 
-    <label for="username" class="sr-only">Username</label>
-    <input type="text" id="username" class="form-control" placeholder="Username" required="" autofocus="">
-    <label for="password" class="sr-only">Passwort</label>
-    <input type="password" id="password" class="form-control" placeholder="Passwort" required="">
+    <label for="username" class="sr-only" i18n="Username Label@@username">Username</label>
+    <input type="text" id="username" class="form-control" i18n-placeholder="Username Placeholder@@username" placeholder="Username" required="" autofocus="">
+    <label for="password" class="sr-only" i18n="Password Label@@password">Passwort</label>
+    <input type="password" id="password" class="form-control" i18n-placeholder="Password Placeholder@@password" placeholder="Passwort" required="">
     <div class="checkbox mb-3">
-      <label>
+      <label i18n="Save Password Checkbox@@rememberPass">
         <input type="checkbox" value="remember-me"> Speichern
       </label>
     </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Anmelden</button>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" i18n="Login Button@@login">Anmelden</button>
 
-    <div class="alert alert-light" role="alert">
+    <div class="alert alert-light" role="alert" i18n="Helptext Login Page@@Login-Help">
       Probleme bei der Anmeldung? Klicke <a class="alert-link" routerLink="/faq" fragment="anmeldung">hier</a>
     </div>
   </form>
