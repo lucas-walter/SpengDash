@@ -1,5 +1,13 @@
 <form (submit)="editName($event)">
   <div class="form-group">
+      <div class="alert alert-danger" role="alert" id="editNameErrMsg" hidden>
+        <h4 class="alert-heading">Fehler bei der Änderung</h4>
+        <p id="editNameErrOut"></p>
+      </div>
+      <div class="alert alert-success" role="alert" id="editNameSuccMsg" hidden>
+        <h4 class="alert-heading">Name erfolgreich geändert</h4>
+        <p id="editNameSuccOut"></p>
+      </div>
     <label for="nameInput">Name</label>
     <input type="name" class="form-control" id="nameInput" value="{{getUsername()}}">
   </div>
@@ -20,10 +28,18 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <form (submit)="editPass($event)">
+        <div class="modal-body">
         <p>Mit dieser Funktion können Sie Ihr Passwort ändern.<br>Dies erstellt auch einen neuen API-Token.</p>
-        <form (submit)="editPass($event)">
-          <div class="form-group">
+        <div class="alert alert-danger" role="alert" id="editPwErrMsg" hidden>
+          <h4 class="alert-heading">Fehler bei der Änderung</h4>
+          <p id="editPwErrOut"></p>
+        </div>
+        <div class="alert alert-success" role="alert" id="editPwSuccMsg" hidden>
+          <h4 class="alert-heading">Passwort erfolgreich geändert</h4>
+          <p id="editPwSuccOut"></p>
+        </div>
+        <div class="form-group">
             <label for="oldPassword" class="col-form-label">Altes Passwort:</label>
             <input type="password" class="form-control" id="oldPassword">
           </div>
@@ -35,12 +51,12 @@
             <label for="newPassword2" class="col-form-label">Neues Passwort bestätigen:</label>
             <input type="password" class="form-control" id="newPassword2">
           </div>
-        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
-        <button type="button" class="btn btn-danger">Passwort ändern</button>
+        <button type="submit" class="btn btn-danger">Passwort ändern</button>
       </div>
+    </form>
     </div>
   </div>
 </div>
