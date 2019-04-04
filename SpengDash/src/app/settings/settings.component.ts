@@ -49,7 +49,7 @@ export class SettingsComponent implements OnInit {
 
   editName(event) {
     event.preventDefault();
-    console.log("dhkgf")
+    event.target.querySelector("#nameInput").disabled = true;
     event.target.querySelector("#editNameErrMsg").hidden = true;
     var req = "http://46.101.115.220/spengdash/api/users/edit.php?username=" + localStorage.getItem('user_username') + "&name=" + encodeURIComponent(event.target.querySelector("#nameInput").value) + "&token=" + localStorage.getItem("user_token");
     var success = false;
@@ -61,12 +61,17 @@ export class SettingsComponent implements OnInit {
         if (res.error) {
           event.target.querySelector("#editNameErrMsg").hidden = false;
           event.target.querySelector("#editNameErrOut").innerHTML = res.error;
+          event.target.querySelector("#nameInput").disabled = false;          
         }
         else {
           event.target.querySelector("#editNameSuccMsg").hidden = false;
           event.target.querySelector("#editNameSuccOut").innerHTML = 'Ihr Name wurde erfolgreich geändert.';
+          localStorage.setItem("user_name", event.target.querySelector("#nameInput").value);
+          event.target.querySelector("#loggedInUsername").innerHTML = localStorage.getItem("user_name");
+          event.target.querySelector("#nameInput").disabled = false;
         }
       }
+      event.target.querySelector("#nameInput").disabled = false;
     };
     xmlhttp.open("POST", req, true);
     xmlhttp.send();
