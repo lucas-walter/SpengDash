@@ -1,9 +1,9 @@
 <div id="formWrapper">
-  <form class="form-signin" id="loginForm" (submit)="loginUser($event)">
-    <h1 class="h3 mb-3 font-weight-normal" i18n="Login Header@@Login-Header">SpengDash Login</h1>
+  <form class="form-signup" id="signupForm" (submit)="createUser($event)">
+    <h1 class="h3 mb-3 font-weight-normal" i18n="Signup Header@@Signup-Header">SpengDash Signup</h1>
 
     <div class="alert alert-danger" role="alert" id="errMsg" hidden>
-      <h4 class="alert-heading" i18n="Login Error@@errorLoggingIn">Fehler bei der Anmeldung</h4>
+      <h4 class="alert-heading" i18n="Signup Error@@errorSigningUp">Fehler bei der Anmeldung</h4>
       <p id="errOut"></p>
     </div>
 
@@ -16,11 +16,10 @@
         <input type="checkbox" value="remember-me"> Speichern
       </label>
     </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit" i18n="Login Button@@login">Anmelden</button>
-    <button type="button" class="btn btn-lg btn-block btn-secondary" (click)="loginAD($event)">Anmeldung mit AD <span class="badge badge-warning">BETA</span></button>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" i18n="Signup Button@@signup">Anmelden</button>
 
-    <div class="alert alert-light" role="alert" i18n="Helptext Login Page@@Login-Help">
-      Probleme bei der Anmeldung? Klicke <a class="alert-link" routerLink="/faq" fragment="anmeldung">hier</a>
+    <div class="alert alert-light" role="alert" i18n="Helptext Signup Page@@Signup-Help">
+      Probleme bei der Anmeldung? Klicke <a class="alert-link" routerLink="/faq" fragment="signup">hier</a>
     </div>
   </form>
 </div>

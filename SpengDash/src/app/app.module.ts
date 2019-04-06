@@ -15,6 +15,7 @@ import { StartComponent } from './start/start.component';
 import { FaqComponent } from './faq/faq.component';
 import { DsgvoComponent } from './dsgvo/dsgvo.component';
 import { SettingsComponent } from './settings/settings.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SettingsComponent } from './settings/settings.component';
     StartComponent,
     FaqComponent,
     DsgvoComponent,
-    SettingsComponent
+    SettingsComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +46,7 @@ import { SettingsComponent } from './settings/settings.component';
       {path:'faq', component: FaqComponent},
       {path:'dsgvo', component: DsgvoComponent},
       {path:'settings', component: SettingsComponent},
+      {path:'signup', component: SignupComponent},
       {path: '**', component: NotFoundComponent }
     ])
   ],
