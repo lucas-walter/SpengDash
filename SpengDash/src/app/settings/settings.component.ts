@@ -14,6 +14,16 @@ export class SettingsComponent implements OnInit {
   }
 
   getUsername() {
+    if (localStorage.getItem("using_ldap") == "true") {
+      $('#changePasswordButton').attr("disabled","true");
+      $('#changePasswordButton').attr("style", "pointer-events: none;")
+      $('#changePasswordTooltip').attr('data-toggle', 'tooltip');
+      $('#changePasswordTooltip').attr('data-placement', 'right');
+      $('#changePasswordTooltip').attr('data-html', 'true');
+      $('#changePasswordTooltip').attr('title', 'Sie verwenden zur Anmeldung AD.<br>Ändern Sie Ihr Passwort über Webmail oder auf Schul-PCs.');
+      (<any>$('#changePasswordTooltip')).tooltip();
+      $('#changePasswordTooltip').attr('title', ''); // Very russian method to get rid of the annoying default tooltip
+    }
     return localStorage.getItem('user_name');
   }
 
