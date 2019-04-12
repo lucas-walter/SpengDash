@@ -18,7 +18,6 @@ export class LoginComponent implements OnInit {
   }
 
   loginAD(event) {
-    confirm("Bei der LDAP-Anmeldung werden von Ihnen die folgenden Daten gespeichert:<br>- Name<br>- Klasse<br>- Username<br>Bitte stimmen Sie zu, dass wir diese Daten gemäß den Datenschutzrichtlinien speichern dürfen.")
     event.target.ownerDocument.querySelector("#errMsg").hidden = true;
     var req = "http://46.101.115.220/spengdash/api/users/adLogin.php?username=" + event.target.ownerDocument.querySelector("#username").value + "&password=" + event.target.ownerDocument.querySelector("#password").value;
     var success = false;
@@ -31,13 +30,6 @@ export class LoginComponent implements OnInit {
           document.querySelector("#errOut").innerHTML = res.error;
         }
         else {
-          const date = new Date();
-        
-          // Set it expire in 7 days
-          date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000));
-        
-          // Set it
-          document.cookie = "token"+"="+ res.token +"; expires="+date.toUTCString()+"; path=/";
           localStorage.setItem('user_id', res.id);
           localStorage.setItem('user_username', res.username);
           localStorage.setItem('user_name', res.name);
@@ -67,13 +59,6 @@ export class LoginComponent implements OnInit {
           event.target.querySelector("#errOut").innerHTML = res.error;
         }
         else {
-          const date = new Date();
-        
-          // Set it expire in 7 days
-          date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000));
-        
-          // Set it
-          document.cookie = "token"+"="+ res.token +"; expires="+date.toUTCString()+"; path=/";
           localStorage.setItem('user_id', res.id);
           localStorage.setItem('user_username', res.username);
           localStorage.setItem('user_name', res.name);
