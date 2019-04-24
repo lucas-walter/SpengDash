@@ -61,7 +61,7 @@ export class SettingsComponent implements OnInit {
     event.preventDefault();
     event.target.querySelector("#nameInput").disabled = true;
     event.target.querySelector("#editNameErrMsg").hidden = true;
-    var req = "http://46.101.115.220/spengdash/api/users/edit.php?username=" + localStorage.getItem('user_username') + "&name=" + encodeURIComponent(event.target.querySelector("#nameInput").value) + "&token=" + localStorage.getItem("user_token");
+    var req = "http://46.101.115.220/spengdash/api/users/edit.php?username=" + localStorage.getItem('user_username') + "&name=" + encodeURIComponent(event.target.querySelector("#nameInput").value);
     var success = false;
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
@@ -84,6 +84,7 @@ export class SettingsComponent implements OnInit {
       event.target.querySelector("#nameInput").disabled = false;
     };
     xmlhttp.open("POST", req, true);
+    xmlhttp.setRequestHeader("SPD-TOKEN", localStorage.getItem("user_token"));
     xmlhttp.send();
   }
 
