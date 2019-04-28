@@ -16,6 +16,10 @@ import { FaqComponent } from './faq/faq.component';
 import { DsgvoComponent } from './dsgvo/dsgvo.component';
 import { SettingsComponent } from './settings/settings.component';
 import { SignupComponent } from './signup/signup.component';
+import { PwaOfflineComponent } from './pwa-offline/pwa-offline.component';
+import { ServiceWorkerModule } from  '@angular/service-worker';
+import { environment } from 'src/environments/environment.prod';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +35,8 @@ import { SignupComponent } from './signup/signup.component';
     FaqComponent,
     DsgvoComponent,
     SettingsComponent,
-    SignupComponent
+    SignupComponent,
+    PwaOfflineComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +53,8 @@ import { SignupComponent } from './signup/signup.component';
       {path:'settings', component: SettingsComponent},
       {path:'signup', component: SignupComponent},
       {path: '**', component: NotFoundComponent }
-    ])
+    ]),
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production})
   ],
   providers: [],
   bootstrap: [AppComponent]
