@@ -1,0 +1,22 @@
+{
+    "name": "SpengDash",
+    "short_name": "SpengDash",
+    "icons": [{
+      "src": "/assets/img/spengDash-128px-white.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      }, {
+        "src": "/assets/img/spengDash-192px-white.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }, {
+        "src": "/assets/img/spengDash-512px.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#e40137",
+    "scope": "/"
+}

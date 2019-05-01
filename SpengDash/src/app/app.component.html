@@ -1,0 +1,104 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" routerLink="/">
+    <img [src]="'/assets/img/spengDashLogo.png'" alt="SpengDash Logo@@alt-logo" height=40p>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" i18n="Page Name@@home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/termine" [routerLinkActive]="['active']" i18n="Page Name@@tasks">Termine</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/raumplaner" [routerLinkActive]="['active']" i18n="Page Name@@planner">Raumplaner</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/stundenplan" [routerLinkActive]="['active']" i18n="Page Name@@timetable">Stundenplan</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" routerLink="/dashboard" [routerLinkActive]="['active']" i18n="Page Name@@timetable">Dashboard</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" id="notLoggedIn">
+      <button type='button' class="btn btn-outline-success my-2 my-sm-0" routerLink="/login" i18n="Log in button@@login">Anmelden</button>
+    </form>
+    <li class="nav-item dropdown form-inline my-2 my-lg-0" id="loggedIn" style="display: none;">
+      <a class="nav-link dropdown-toggle" id="loggedInUsername" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loggedInUsername">
+        <a class="dropdown-item" onclick="logOut()" i18n="Log Out Button@@logout">Abmelden</a>
+        <a class="dropdown-item" routerLink="/settings" i18n="Settings Option@@settings">Einstellungen</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" routerLink="/dsgvo" i18n="Page Name@@GDPRCenter">Datenschutz-Center</a>
+      </div>
+    </li>
+  </div>
+</nav>
+<main>
+  <div id="main">
+    <router-outlet></router-outlet>
+  </div>
+</main>
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+
+    <img [src]="'/assets/img/spengDashLogo.png'" alt="SpengDash Logo@@alt-logo" width="100%" style="max-width: 300px;">
+
+    <p class="footer-links">
+      <a href="#" routerLink="/" i18n="Page Name@@home">Home</a>
+      ·
+      <a href="#" routerLink="/termine" i18n="Page Name@@tasks">Termine</a>
+      ·
+      <a href="#" routerLink="raumplaner" i18n="Page Name@@planner">Raumplaner</a>
+      ·
+      <a href="#" routerLink="/stundenplan" i18n="Page Name@@timetable">Stundenplan</a>
+      ·
+	  <a href="#" routerLink="/dashboard" i18n="Page Name@@timetable">Dashboard</a>
+	  .
+      <a href="#" routerLink="/faq" i18n="Page Name@@faq">FAQ</a>
+      <br>
+      <a href="#" routerLink="/impressum" i18n="Page Name@@imprint">Impressum</a>
+      ·
+      <a href="#" routerLink="/datenschutz" i18n="Page Name@@dataProtection">Datenschutz</a>
+    </p>
+
+    <p class="footer-company-name">SpengDash &copy; 2019</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p i18n="Address@@spengergasseAddr"><span>Spengergasse 20</span> Wien, Österreich</p>
+    </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:SpengDash@gmail.com">SpengDash@gmail.com</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <p class="footer-company-about" i18n="Footer Website Explanation@@Footer-aboutSite">
+      <span>Über die Website</span>
+      Diese Website hilft Ihnen, Ihren Schulalltag zu erleichtern.
+    </p>
+
+    <div class="footer-icons">
+
+      <a href="https://www.facebook.com/speng.dash.1" target="new"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/SpengDash" target="new"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/lucas-walter/SpengDash" target="new"><i class="fa fa-github"></i></a>
+
+    </div>
+
+  </div>
+
+</footer>
