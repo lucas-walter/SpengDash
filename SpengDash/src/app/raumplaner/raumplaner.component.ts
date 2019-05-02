@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router"
 
 @Component({
   selector: 'app-raumplaner',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RaumplanerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    if (!localStorage.getItem("user_name")) this.router.navigate(['/login'])
     this.updateRooms();
   }
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from "jquery";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-settings',
@@ -8,10 +9,10 @@ import * as $ from "jquery";
 })
 export class SettingsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit() {
-    
+    if (!localStorage.getItem("user_name")) this.router.navigate(['/login'])
   }
 
   getUsername() {
