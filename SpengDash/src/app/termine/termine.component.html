@@ -1,117 +1,175 @@
 <div class="container">
-    <div class="row">
-      <div class="col-sm-1">
+  <div class="row">
+    <div class="col-sm-1">
 
+    </div>
+    <div class="col-lg-10">
+      <table class="table table-striped table-responsive-sg">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Art</th>
+            <th scope="col">Fach</th>
+            <th scope="col">bis Datum/Stunde</th>
+            <th scope="col" class="d-none d-md-table-cell">von Datum</th>
+            <th scope="col">Beschreibung</th>
+            <th scope="col">Aktionen</th>
+          </tr>
+        </thead>
+        <tbody id="terminList">
+          <tr>
+            <th scope="row">Hausübung</th>
+            <td>Englisch</td>
+            <td>13.05.2019/14:25</td>
+            <td class="d-none d-md-table-cell">30.04.2019</td>
+            <td>das ist Beispiel 9999</td>
+            <td>
+              <button type="button" class="btn btn-default">
+                <i class="material-icons">edit</i>
+              </button>
+              <button type="button" class="btn btn-danger">
+                <i class="material-icons">close</i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Hausübung</th>
+            <td>Englisch</td>
+            <td>13.05.2019/14:25</td>
+            <td class="d-none d-md-table-cell">30.04.2019</td>
+            <td>das ist Beispiel 9999</td>
+            <td>
+              <button type="button" class="btn btn-default">
+                <i class="material-icons">edit</i>
+              </button>
+              <button type="button" class="btn btn-danger">
+                <i class="material-icons">close</i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Hausübung</th>
+            <td>Englisch</td>
+            <td>13.05.2019/14:25</td>
+            <td class="d-none d-md-table-cell">30.04.2019</td>
+            <td>das ist Beispiel 9999</td>
+            <td>
+              <button type="button" class="btn btn-default">
+                <i class="material-icons">edit</i>
+              </button>
+              <button type="button" class="btn btn-danger">
+                <i class="material-icons">close</i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Hausübung</th>
+            <td>Englisch</td>
+            <td>13.05.2019/14:25</td>
+            <td class="d-none d-md-table-cell">30.04.2019</td>
+            <td>das ist Beispiel 9999</td>
+            <td>
+              <button type="button" class="btn btn-default">
+                <i class="material-icons">edit</i>
+              </button>
+              <button type="button" class="btn btn-danger">
+                <i class="material-icons">close</i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Hausübung</th>
+            <td>Englisch</td>
+            <td>13.05.2019/14:25</td>
+            <td class="d-none d-md-table-cell">30.04.2019</td>
+            <td>das ist Beispiel 9999</td>
+            <td>
+              <button type="button" class="btn btn-default">
+                <i class="material-icons">edit</i>
+              </button>
+              <button type="button" class="btn btn-danger">
+                <i class="material-icons">close</i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Hausübung</th>
+            <td>Englisch</td>
+            <td>13.05.2019/14:25</td>
+            <td class="d-none d-md-table-cell">30.04.2019</td>
+            <td>das ist Beispiel 9999</td>
+            <td>
+              <button type="button" class="btn btn-default">
+                <i class="material-icons">edit</i>
+              </button>
+              <button type="button" class="btn btn-danger">
+                <i class="material-icons">close</i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm-1">
+        
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editModalTitle">Termin bearbeiten</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <div class="col-lg-10">
-        <table class="table table-striped table-responsive-sg">
-    
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">Art</th>
-        <th scope="col">Fach</th>
-        <th scope="col">bis Datum/Stunde</th>
-        <th scope="col" class="d-none d-md-block">von Datum</th>
-        <th scope="col">Beschreibung</th>
-        <th scope="col">Aktionen</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Hausübung</th>
-        <td>Englisch</td>
-        <td>13.05.2019/14:25</td>
-        <td class="d-none d-md-block">30.04.2019</td>
-        <td>das ist Beispiel 9999</td>
-        <td>
-            <button type="button" class="btn btn-default btn-sm">
-              <span class="glyphicon glyphicon-pencil"></span>
-            </button>
-            <button type="button" class="btn btn-danger">
-                <span class="glyphicon glyphicon-remove"></span>
-            </button>
-         </td>
-      </tr>
-      <tr>
-        <th scope="row">Hausübung</th>
-        <td>Englisch</td>
-        <td>13.05.2019/14:25</td>
-        <td class="d-none d-md-block">30.04.2019</td>
-        <td>das ist Beispiel 9999</td>
-        <td>
-            <button type="button" class="btn btn-default btn-sm">
-              <span class="glyphicon glyphicon-pencil"></span>
-            </button>
-            <button type="button" class="btn btn-danger">
-                <span class="glyphicon glyphicon-remove"></span>
-            </button>
-         </td>
-      </tr>
-      <tr>
-        <th scope="row">Hausübung</th>
-        <td>Englisch</td>
-        <td>13.05.2019/14:25</td>
-        <td class="d-none d-md-block">30.04.2019</td>
-        <td>das ist Beispiel 9999</td>
-        <td>
-            <button type="button" class="btn btn-default btn-sm">
-              <span class="glyphicon glyphicon-pencil"></span>
-            </button>
-            <button type="button" class="btn btn-danger">
-                <span class="glyphicon glyphicon-remove"></span>
-            </button>
-         </td>
-      </tr>
-      <tr>
-        <th scope="row">Hausübung</th>
-        <td>Englisch</td>
-        <td>13.05.2019/14:25</td>
-        <td class="d-none d-md-block">30.04.2019</td>
-        <td>das ist Beispiel 9999</td>
-        <td>
-            <button type="button" class="btn btn-default btn-sm">
-              <span class="glyphicon glyphicon-pencil"></span>
-            </button>
-            <button type="button" class="btn btn-danger">
-                <span class="glyphicon glyphicon-remove"></span>
-            </button>
-         </td>
-      </tr>
-      <tr>
-        <th scope="row">Hausübung</th>
-        <td>Englisch</td>
-        <td>13.05.2019/14:25</td>
-        <td class="d-none d-md-block">30.04.2019</td>
-        <td>das ist Beispiel 9999</td>
-        <td>
-            <button type="button" class="btn btn-default btn-sm">
-              <span class="glyphicon glyphicon-pencil"></span>
-            </button>
-            <button type="button" class="btn btn-danger">
-                <span class="glyphicon glyphicon-remove"></span>
-            </button>
-         </td>
-      </tr>
-      <tr>
-        <th scope="row">Hausübung</th>
-        <td>Englisch</td>
-        <td>13.05.2019/14:25</td>
-        <td class="d-none d-md-block">30.04.2019</td>
-        <td>das ist Beispiel 9999</td>
-        <td>
-            <button type="button" class="btn btn-default btn-sm">
-              <span class="glyphicon glyphicon-pencil"></span>
-            </button>
-            <button type="button" class="btn btn-danger">
-                <span class="glyphicon glyphicon-remove"></span>
-            </button>
-         </td>
-      </tr>  
-    </tbody>
-  </table>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="editM-id">ID</label>
+            <input type="number" disabled class="form-control" id="editM-id">
+          </div>
+          <div class="form-group">
+            <label for="editM-fach">Fach auswählen</label>
+            <select class="form-control" id="editM-fach">
+              
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="editM-beschreibung">Beschreibung</label>
+            <textarea class="form-control" id="editM-beschreibung" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="editM-class">Termin mit Klasse teilen?</label><br>
+            <label class="switch"><input type="checkbox" id="editM-class"><div class="slider round"><!--ADDED HTML --><span class="on">Ja</span><span class="off">Nein</span><!--END--></div></label>
+          </div>
+        </form>
       </div>
-      <div class="col-sm-1">
-
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="termin_edit()">Save changes</button>
       </div>
     </div>
   </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteModalTitle">Termin löschen</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger">Termin löschen</button>
+      </div>
+    </div>
+  </div>
+</div>

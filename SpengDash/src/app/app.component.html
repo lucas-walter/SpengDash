@@ -10,7 +10,11 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" i18n="Page Name@@home">Home</a>
+        <a class="nav-link" routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}"
+          i18n="Page Name@@home" id="navHome">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/dashboard" [routerLinkActive]="['active']" i18n="Page Name@@timetable" id="navDashboard">Dashboard</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/termine" [routerLinkActive]="['active']" i18n="Page Name@@tasks">Termine</a>
@@ -21,15 +25,13 @@
       <li class="nav-item">
         <a class="nav-link" routerLink="/stundenplan" [routerLinkActive]="['active']" i18n="Page Name@@timetable">Stundenplan</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/dashboard" [routerLinkActive]="['active']" i18n="Page Name@@timetable">Dashboard</a>
-      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0" id="notLoggedIn">
       <button type='button' class="btn btn-outline-success my-2 my-sm-0" routerLink="/login" i18n="Log in button@@login">Anmelden</button>
     </form>
     <li class="nav-item dropdown form-inline my-2 my-lg-0" id="loggedIn" style="display: none;">
-      <a class="nav-link dropdown-toggle" id="loggedInUsername" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+      <a class="nav-link dropdown-toggle" id="loggedInUsername" role="button" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false"></a>
       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loggedInUsername">
         <a class="dropdown-item" onclick="logOut()" i18n="Log Out Button@@logout">Abmelden</a>
         <a class="dropdown-item" routerLink="/settings" i18n="Settings Option@@settings">Einstellungen</a>
@@ -60,7 +62,7 @@
       <a href="#" routerLink="/stundenplan" i18n="Page Name@@timetable">Stundenplan</a>
       ·
       <a href="#" routerLink="/dashboard" i18n="Page Name@@timetable">Dashboard</a>
-      .
+      ·
       <a href="#" routerLink="/faq" i18n="Page Name@@faq">FAQ</a>
       <br>
       <a href="#" routerLink="/impressum" i18n="Page Name@@imprint">Impressum</a>

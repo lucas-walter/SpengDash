@@ -7,4 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
   title = 'SpengDash';
+
+  ngOnInit() {
+    if (localStorage.getItem("user_name")) {
+      // Hide Home, show Dashboard
+      $("#navHome").hide();
+    }
+    else {
+      // Hide Dashboard, show Home
+      $("#navDashboard").hide();
+    }
+  }
 }

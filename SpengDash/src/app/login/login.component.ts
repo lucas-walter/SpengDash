@@ -73,7 +73,7 @@ export class LoginComponent implements OnInit {
   }
 
   loginSuccess() {
-    this.router.navigate(['/'])
+    this.router.navigate(['/dashboard'])
   }
 
 }
