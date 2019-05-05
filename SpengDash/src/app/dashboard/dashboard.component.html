@@ -1,56 +1,95 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm">
-     <div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Termine</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Termine (nächste 5)</h5>
+          <p class="card-text">
+            <table class="table table-striped table-responsive-sg">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Fach</th>
+                  <th scope="col">bis Datum/Stunde</th>
+                  <th scope="col" class="d-none d-md-table-cell">von Datum</th>
+                  <th scope="col">Beschreibung</th>
+                </tr>
+              </thead>
+              <tbody id="terminList">
+                <tr>
+                  <td scope="row">Englisch</td>
+                  <td>13.05.2019/14:25</td>
+                  <td class="d-none d-md-table-cell">30.04.2019</td>
+                  <td>das ist Beispiel 9999</td>
+                </tr>
+              </tbody>
+            </table>
+            <a routerLink="/termine" class="btn btn-primary">Alle Termine</a>
+        </div>
+      </div>
     </div>
-    <div class="col-sm">
-     <div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Aufgaben</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+  </div><br>
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Aufgaben (nächste 5)</h5>
+          <p class="card-text">
+            <table class="table table-striped table-responsive-sg">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Fach</th>
+                  <th scope="col">bis Datum/Stunde</th>
+                  <th scope="col" class="d-none d-md-table-cell">von Datum</th>
+                  <th scope="col">Beschreibung</th>
+                </tr>
+              </thead>
+              <tbody id="hwList">
+                <tr>
+                  <td scope="row">Englisch</td>
+                  <td>13.05.2019/14:25</td>
+                  <td class="d-none d-md-table-cell">30.04.2019</td>
+                  <td>das ist Beispiel 9999</td>
+                </tr>
+              </tbody>
+            </table>
+            <a routerLink="/termine" class="btn btn-primary">Alle Aufgaben</a>
+        </div>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Stundenplan</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-sm">
-      <div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Stundenplan</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </div>
-  </div>
-  <br>
-  <div class ="row">
-  <div class ="col-12">
+    <br>
+    <div class="row">
+      <div class="col-6">
 
-   <div class="card">
-  <div class="card-body">
-    <h5 class="card-title">Freie Räume</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Freie Räume</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Freie Tage</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  </div>
-</div>
-  </div>
-  <br>
-   <div class ="row">
-   <div class ="col-12">
-   <div class="card" >
-  <div class="card-body">
-    <h5 class="card-title">Freie Tage</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div> 
-</div> 
-  </div>
-</div>

@@ -3,6 +3,10 @@
     padding-right: 30px;
 }
 
+#deyble {
+    overflow-x: scroll;
+}
+
 #createBtn {
     margin: auto;
 }
