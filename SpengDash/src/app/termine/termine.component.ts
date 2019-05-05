@@ -49,6 +49,7 @@ export class TermineComponent implements OnInit {
       if (this.readyState == 4 && this.status == 200) {
         var res = JSON.parse(this.responseText);
         TermineComponent.addOptions($("#editM-fach"), res);
+        TermineComponent.addOptions($("#createM-fach"), res);
       }
     };
     xmlhttp.open("GET", req, true);

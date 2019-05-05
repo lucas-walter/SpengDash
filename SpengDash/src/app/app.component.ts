@@ -17,5 +17,10 @@ export class AppComponent {
       // Hide Dashboard, show Home
       $("#navDashboard").hide();
     }
+
+    if (/msie\s|trident\//i.test(window.navigator.userAgent)) {
+      $('#shameOnIE').show();
+    }
+    
   }
 }

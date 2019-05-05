@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
+.dropdown-item {
+    cursor: pointer; /* Why isn't this part of Bootstrap */
+}
 
 #main {
     padding-left: 10px;

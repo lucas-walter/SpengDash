@@ -3,6 +3,14 @@
     padding-right: 30px;
 }
 
+#createBtn {
+    margin: auto;
+}
+
+.dropdown-item {
+    cursor: pointer; /* Why isn't this part of Bootstrap */
+}
+
 .switch {
     position: relative;
     display: inline-block;
