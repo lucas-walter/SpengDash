@@ -3,28 +3,58 @@
     <div class="col-12">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Termine (nächste 5)</h5>
+          <div class="row">
+            <div class="col-6">
+              <h5 class="card-title">Termine (nächste 5)</h5>
+            </div>
+            <div class="col-6 text-right">
+              <a routerLink="/termine" class="btn btn-primary">Alle Termine</a>
+            </div>
+          </div>
           <p class="card-text">
             <table class="table table-striped table-responsive-sg">
               <thead class="thead-dark">
                 <tr>
                   <th scope="col">Fach</th>
-                  <th scope="col">bis Datum/Stunde</th>
+                  <th scope="col">bis Datum</th>
                   <th scope="col" class="d-none d-md-table-cell">von Datum</th>
                   <th scope="col">Beschreibung</th>
                 </tr>
               </thead>
               <tbody id="terminList">
                 <tr>
-                  <td scope="row">Englisch</td>
-                  <td>13.05.2019/14:25</td>
-                  <td class="d-none d-md-table-cell">30.04.2019</td>
-                  <td>das ist Beispiel 9999</td>
+                  <td scope="row" class="lazy">lazy loaded</td>
+                  <td class="lazy"> </td>
+                  <td class="d-none d-md-table-cell lazy"> </td>
+                  <td class="lazy"> </td>
+                </tr>
+                <tr>
+                  <td scope="row" class="lazy">lazy loaded</td>
+                  <td class="lazy"></td>
+                  <td class="d-none d-md-table-cell lazy"></td>
+                  <td class="lazy"></td>
+                </tr>
+                <tr>
+                  <td scope="row" class="lazy">lazy loaded</td>
+                  <td class="lazy"></td>
+                  <td class="d-none d-md-table-cell lazy"></td>
+                  <td class="lazy"></td>
+                </tr>
+                <tr>
+                  <td scope="row" class="lazy">lazy loaded</td>
+                  <td class="lazy"></td>
+                  <td class="d-none d-md-table-cell lazy"></td>
+                  <td class="lazy"></td>
+                </tr>
+                <tr>
+                  <td scope="row" class="lazy">lazy loaded</td>
+                  <td class="lazy"></td>
+                  <td class="d-none d-md-table-cell lazy"></td>
+                  <td class="lazy"></td>
                 </tr>
               </tbody>
             </table>
-            <a routerLink="/termine" class="btn btn-primary">Alle Termine</a>
-        </div>
+        </div>  
       </div>
     </div>
   </div><br>
@@ -32,7 +62,14 @@
     <div class="col-12">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Aufgaben (nächste 5)</h5>
+          <div class="row">
+            <div class="col-6">
+              <h5 class="card-title">Aufgaben (nächste 5)</h5>
+            </div>
+            <div class="col-6 text-right">
+              <a routerLink="/termine" class="btn btn-primary">Alle Aufgaben</a>
+            </div>
+          </div>
           <p class="card-text">
             <table class="table table-striped table-responsive-sg">
               <thead class="thead-dark">
@@ -44,15 +81,38 @@
                 </tr>
               </thead>
               <tbody id="hwList">
-                <tr>
-                  <td scope="row">Englisch</td>
-                  <td>13.05.2019/14:25</td>
-                  <td class="d-none d-md-table-cell">30.04.2019</td>
-                  <td>das ist Beispiel 9999</td>
-                </tr>
+                  <tr>
+                      <td scope="row" class="lazy">lazy loaded</td>
+                      <td class="lazy"> </td>
+                      <td class="d-none d-md-table-cell lazy"> </td>
+                      <td class="lazy"> </td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="lazy">lazy loaded</td>
+                      <td class="lazy"></td>
+                      <td class="d-none d-md-table-cell lazy"></td>
+                      <td class="lazy"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="lazy">lazy loaded</td>
+                      <td class="lazy"></td>
+                      <td class="d-none d-md-table-cell lazy"></td>
+                      <td class="lazy"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="lazy">lazy loaded</td>
+                      <td class="lazy"></td>
+                      <td class="d-none d-md-table-cell lazy"></td>
+                      <td class="lazy"></td>
+                    </tr>
+                    <tr>
+                      <td scope="row" class="lazy">lazy loaded</td>
+                      <td class="lazy"></td>
+                      <td class="d-none d-md-table-cell lazy"></td>
+                      <td class="lazy"></td>
+                    </tr>
               </tbody>
             </table>
-            <a routerLink="/termine" class="btn btn-primary">Alle Aufgaben</a>
         </div>
       </div>
     </div><br>

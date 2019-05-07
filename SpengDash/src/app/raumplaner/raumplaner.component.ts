@@ -28,7 +28,7 @@ export class RaumplanerComponent implements OnInit {
         else {
           var date = new Date(res.date);
           document.getElementsByClassName("headerstd")[0].innerHTML = res.lessonNumber   + ". Stunde am " + date.toLocaleDateString('de-DE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }); 
-          document.getElementsByClassName("headerstd")[1].innerHTML = res.lessonNumber+1 + ". Stunde am " + new Date(date.setDate(date.getDate()+1)).toLocaleDateString('de-DE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+          document.getElementsByClassName("headerstd")[1].innerHTML = res.lessonNumber+1 + ". Stunde am " + date.toLocaleDateString('de-DE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
           document.getElementById("l1-a").innerHTML = RaumplanerComponent.arrayToList(res.current.a);
           document.getElementById("l1-b").innerHTML = RaumplanerComponent.arrayToList(res.current.b);
           document.getElementById("l1-c").innerHTML = RaumplanerComponent.arrayToList(res.current.c);
