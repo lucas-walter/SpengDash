@@ -1,8 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import {RouterModule, Routes} from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { TermineComponent } from './termine/termine.component';
@@ -59,7 +59,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ]),
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production})
   ],
-  providers: [],
+  providers: [
+    Title
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

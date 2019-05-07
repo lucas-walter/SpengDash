@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { isDevMode } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
   title = 'SpengDash';
+
+  public constructor(private titleService: Title ) { }
 
   ngOnInit() {
     if (localStorage.getItem("user_name")) {
@@ -21,6 +25,9 @@ export class AppComponent {
     if (/msie\s|trident\//i.test(window.navigator.userAgent)) {
       $('#shameOnIE').show();
     }
-    
+    if(isDevMode()) {
+      this.titleService.setTitle( "SpengDash STAGING" );
+      $('#header-logo').fadeTo(5,0.5)
+    }
   }
 }
