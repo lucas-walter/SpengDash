@@ -54,7 +54,7 @@
                 </tr>
               </tbody>
             </table>
-        </div>  
+        </div>
       </div>
     </div>
   </div><br>
@@ -81,117 +81,129 @@
                 </tr>
               </thead>
               <tbody id="hwList">
-                  <tr>
-                      <td scope="row" class="lazy">lazy loaded</td>
-                      <td class="lazy"> </td>
-                      <td class="d-none d-md-table-cell lazy"> </td>
-                      <td class="lazy"> </td>
-                    </tr>
-                    <tr>
-                      <td scope="row" class="lazy">lazy loaded</td>
-                      <td class="lazy"></td>
-                      <td class="d-none d-md-table-cell lazy"></td>
-                      <td class="lazy"></td>
-                    </tr>
-                    <tr>
-                      <td scope="row" class="lazy">lazy loaded</td>
-                      <td class="lazy"></td>
-                      <td class="d-none d-md-table-cell lazy"></td>
-                      <td class="lazy"></td>
-                    </tr>
-                    <tr>
-                      <td scope="row" class="lazy">lazy loaded</td>
-                      <td class="lazy"></td>
-                      <td class="d-none d-md-table-cell lazy"></td>
-                      <td class="lazy"></td>
-                    </tr>
-                    <tr>
-                      <td scope="row" class="lazy">lazy loaded</td>
-                      <td class="lazy"></td>
-                      <td class="d-none d-md-table-cell lazy"></td>
-                      <td class="lazy"></td>
-                    </tr>
+                <tr>
+                  <td scope="row" class="lazy">lazy loaded</td>
+                  <td class="lazy"> </td>
+                  <td class="d-none d-md-table-cell lazy"> </td>
+                  <td class="lazy"> </td>
+                </tr>
+                <tr>
+                  <td scope="row" class="lazy">lazy loaded</td>
+                  <td class="lazy"></td>
+                  <td class="d-none d-md-table-cell lazy"></td>
+                  <td class="lazy"></td>
+                </tr>
+                <tr>
+                  <td scope="row" class="lazy">lazy loaded</td>
+                  <td class="lazy"></td>
+                  <td class="d-none d-md-table-cell lazy"></td>
+                  <td class="lazy"></td>
+                </tr>
+                <tr>
+                  <td scope="row" class="lazy">lazy loaded</td>
+                  <td class="lazy"></td>
+                  <td class="d-none d-md-table-cell lazy"></td>
+                  <td class="lazy"></td>
+                </tr>
+                <tr>
+                  <td scope="row" class="lazy">lazy loaded</td>
+                  <td class="lazy"></td>
+                  <td class="d-none d-md-table-cell lazy"></td>
+                  <td class="lazy"></td>
+                </tr>
               </tbody>
             </table>
         </div>
       </div>
-    </div><br>
-    <div class="row">
-      <div class="col-12">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Stundenplan</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+    </div>
+  </div><br>
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Stundenplan</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
     </div>
-    <br>
-    <div class="row">
-      <div class="col-6">
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Freie Räume</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div><br>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <h5 class="card-title">Freie Räume</h5>
+            </div>
+            <div class="col-6 text-right">
+              <a class="btn btn-primary" (click)="fetchRooms(0)" id="rl-currBtn"
+                style="color: white; cursor:pointer;">Diese Stunde</a>
+              <a class="btn btn-primary" (click)="fetchRooms(1)" id="rl-nextBtn"
+                style="color: white; cursor:pointer;">Nächste Stunde</a>
+            </div>
           </div>
+          <p class="card-text">
+            <h6 id="rlheader"><span class="lazy">X. Stunde am XXXXXXXXX</span></h6>
+            <ul id="rl">
+
+            </ul>
+            <a routerLink="/raumplaner" class="btn btn-primary">Mehr</a>
         </div>
       </div>
-      <div class="col-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Freie Tage</h5>
-            <p class="card-text">
-              <table class="table table-striped table-responsive-sg">
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col">Fach</th>
-                    <th scope="col">bis Datum</th>
-                    <th scope="col" class="d-none d-md-table-cell">von Datum</th>
-                    <th scope="col">Beschreibung</th>
-                  </tr>
-                </thead>
-                <tbody id="freiList">
-                    <tr>
-                        <td scope="row" class="lazy">lazy loaded</td>
-                        <td class="lazy"> </td>
-                        <td class="d-none d-md-table-cell lazy"> </td>
-                        <td class="lazy"> </td>
-                      </tr>
-                      <tr>
-                        <td scope="row" class="lazy">lazy loaded</td>
-                        <td class="lazy"></td>
-                        <td class="d-none d-md-table-cell lazy"></td>
-                        <td class="lazy"></td>
-                      </tr>
-                      <tr>
-                        <td scope="row" class="lazy">lazy loaded</td>
-                        <td class="lazy"></td>
-                        <td class="d-none d-md-table-cell lazy"></td>
-                        <td class="lazy"></td>
-                      </tr>
-                      <tr>
-                        <td scope="row" class="lazy">lazy loaded</td>
-                        <td class="lazy"></td>
-                        <td class="d-none d-md-table-cell lazy"></td>
-                        <td class="lazy"></td>
-                      </tr>
-                      <tr>
-                        <td scope="row" class="lazy">lazy loaded</td>
-                        <td class="lazy"></td>
-                        <td class="d-none d-md-table-cell lazy"></td>
-                        <td class="lazy"></td>
-                      </tr>
-                </tbody>
-              </table>
-              </div>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div><br><br>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <h5 class="card-title">Freie Tage</h5>
+            </div>
+            <div class="col-6 text-right">
+              <a class="btn btn-primary" (click)="refreshHolidays()"
+                style="color: white; cursor:pointer;">Aktualisieren</a>
+            </div>
           </div>
+          <p class="card-text">
+            <table class="table table-striped table-responsive-sg">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Von</th>
+                  <th scope="col">Bis</th>
+                </tr>
+              </thead>
+              <tbody id="freiList">
+                <tr>
+                  <td scope="row" class="lazy">lazy loaded</td>
+                  <td class="lazy"> </td>
+                  <td class="d-none d-md-table-cell lazy"> </td>
+                </tr>
+                <tr>
+                  <td scope="row" class="lazy">lazy loaded</td>
+                  <td class="lazy"></td>
+                  <td class="d-none d-md-table-cell lazy"></td>
+                </tr>
+                <tr>
+                  <td scope="row" class="lazy">lazy loaded</td>
+                  <td class="lazy"></td>
+                  <td class="d-none d-md-table-cell lazy"></td>
+                </tr>
+                <tr>
+                  <td scope="row" class="lazy">lazy loaded</td>
+                  <td class="lazy"></td>
+                  <td class="d-none d-md-table-cell lazy"></td>
+                </tr>
+                <tr>
+                  <td scope="row" class="lazy">lazy loaded</td>
+                  <td class="lazy"></td>
+                  <td class="d-none d-md-table-cell lazy"></td>
+                </tr>
+              </tbody>
+            </table>
         </div>
       </div>
     </div>
   </div>
+</div>
