@@ -11,11 +11,35 @@ export class DashboardComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    if (!localStorage.getItem("user_name")) this.router.navigate(['/login'])
+    if (!localStorage.getItem("user_name")) {
+      this.router.navigate(['/login'])
+      return;
+    }
     this.fetchTerm();
     this.fetchHW();
+    this.fetchHolidays();
   }
 
+  fetchHolidays() {
+    if (localStorage.getItem("holidayCache")) {
+      DashboardComponent.addTableRows(localStorage.getItem("holidayCache"), $("#freiList")); // Use cached holiday values
+    }
+    var req = "http://46.101.115.220/spengdash/api/freieTage.php";
+    var success = false;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        var res = JSON.parse(this.responseText);
+        console.log(res);
+        DashboardComponent.addTableRows(res, $("#freiList"));
+        localStorage.setItem("holidayCache", this.responseText);
+        console.log(res);
+      }
+    };
+    xmlhttp.open("GET", req, true);
+    xmlhttp.setRequestHeader("SPD-TOKEN", localStorage.getItem("user_token"));
+    xmlhttp.send();
+  }
 
   fetchTerm() {
     var req = "http://46.101.115.220/spengdash/api/termine/my.php?username=" + localStorage.getItem("user_username") + "&limit=5&type=T";

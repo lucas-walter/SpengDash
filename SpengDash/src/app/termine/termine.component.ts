@@ -11,7 +11,10 @@ export class TermineComponent implements OnInit {
   constructor(private router : Router) { }
 
   ngOnInit() {
-    if (!localStorage.getItem("user_name")) this.router.navigate(['/login'])
+    if (!localStorage.getItem("user_name")) {
+      this.router.navigate(['/login'])
+      return;
+    }
     this.fetchTermine();
     this.fetchOptions();
   }

@@ -11,7 +11,10 @@ export class RaumplanerComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    if (!localStorage.getItem("user_name")) this.router.navigate(['/login'])
+    if (!localStorage.getItem("user_name")) {
+      this.router.navigate(['/login']);
+      return;
+    }
     this.updateRooms();
   }
 
