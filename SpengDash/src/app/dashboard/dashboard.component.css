@@ -1,3 +1,17 @@
 .lazy {
     opacity: 0;
 }
+
+.td-beschreibung {
+    overflow-wrap: break-word;
+}
+
+table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+.table-fit {
+    width: auto;
+    table-layout: auto;
+    white-space: nowrap;
+}

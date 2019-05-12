@@ -186,10 +186,10 @@ export class DashboardComponent implements OnInit {
       else if (row[i].art == "T") art = "Termin";
       jQuery.append(
         "<tr>" +
-        `<td scope="row">${row[i].fach}</td>` +
-        `<td>${row[i].datumende}</td>` +
-        `<td class="d-none d-md-table-cell">${row[i].datumstart}</td>` +
-        `<td>${row[i].beschreibung}</td>` +
+        `<td scope="row" class="table-fit">${row[i].fach}</td>` +
+        `<td class="table-fit">${row[i].datumende}</td>` +
+        `<td class="d-none d-md-table-cell table-fit">${row[i].datumstart}</td>` +
+        `<td class="td-beschreibung">${row[i].beschreibung}</td>` +
         "</tr>"
       );
     }
