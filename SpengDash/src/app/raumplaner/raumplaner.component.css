@@ -19,9 +19,9 @@
 }
 
 #heute {
-    background-color: #e40137;
+    border: 2px solid #e40137;
     margin: 10px;
-    color: white;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -48,14 +48,13 @@
 
 .trakt {
     margin: 4px;
-    border: 2px solid black;
     padding: 2px;
     text-align: center;
-    background-color: #e40137;
+    border-top: 2px solid #e40137;
+    border-bottom: 2px solid #e40137;
     font-weight: bold;
     font-size: 30px;
     font-family: Arial;
-    color: white;
 }
 
 li {
