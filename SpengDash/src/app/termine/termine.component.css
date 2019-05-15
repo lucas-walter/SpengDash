@@ -1,6 +1,28 @@
+.lazy {
+    opacity: 0;
+}
+
 #tableRow {
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.td-beschreibung {
+    overflow-wrap: break-word;
+}
+
+table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+.table-fit {
+    width: auto;
+    table-layout: auto;
+    white-space: nowrap;
+}
+
+#deleteM-name {
+    word-break: break-all;
 }
 
 #deyble {

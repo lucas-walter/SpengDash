@@ -4,11 +4,13 @@
 
 .td-beschreibung {
     overflow-wrap: break-word;
+    text-overflow: ellipsis;
 }
 
 table {
     table-layout: fixed;
     word-wrap: break-word;
+    overflow-x: scroll;
 }
 .table-fit {
     width: auto;

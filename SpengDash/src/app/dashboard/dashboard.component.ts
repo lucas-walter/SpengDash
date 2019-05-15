@@ -189,7 +189,7 @@ export class DashboardComponent implements OnInit {
         `<td scope="row" class="table-fit">${row[i].fach}</td>` +
         `<td class="table-fit">${row[i].datumende}</td>` +
         `<td class="d-none d-md-table-cell table-fit">${row[i].datumstart}</td>` +
-        `<td class="td-beschreibung">${row[i].beschreibung}</td>` +
+        `<td class="td-beschreibung" title="${row[i].beschreibung}">${row[i].beschreibung.slice(0,100) + (row[i].beschreibung.length > 100 ? "..." : "")}</td>` +
         "</tr>"
       );
     }
