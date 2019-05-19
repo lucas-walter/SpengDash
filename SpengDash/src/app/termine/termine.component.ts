@@ -86,13 +86,14 @@ export class TermineComponent implements OnInit {
       var art = null;
       if (row[i].art == "A") art = "Hausübung";
       else if (row[i].art == "T") art = "Termin";
+
       $("#terminList").append(
         "<tr>" +
-          `<th scope="row">${art ? art : row[i].art}</td>` +
-          `<td>${row[i].fach}</td>` +
-          `<td>${row[i].datumende}</td>` +
-          `<td class="d-none d-md-table-cell">${row[i].datumstart}</td>` +
-          `<td>${row[i].beschreibung}</td>` +
+          `<th scope="row" class="table-fit">${art ? art : row[i].art}</td>` +
+          `<td class="table-fit">${row[i].fach}</td>` +
+          `<td class="table-fit">${row[i].datumende}</td>` +
+          `<td class="d-none d-md-table-cell table-fit">${row[i].datumstart}</td>` +
+          `<td class="td-beschreibung" title="${row[i].beschreibung}">${row[i].beschreibung.slice(0,50) + (row[i].beschreibung.length > 100 ? "..." : "")}</td>` +
           `<td>
               <button type="button" class="btn btn-default" onclick="termin_prepedit(${row[i].id})" data-toggle="modal" data-target="#editModal">
                 <i class="material-icons">edit</i>
@@ -103,6 +104,6 @@ export class TermineComponent implements OnInit {
             </td>` +
           "</tr>"
     );
-    }
+      }
   }
 }
