@@ -43,20 +43,20 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      {path:'', component: StartComponent},
-      {path:'login', component: LoginComponent},
-      {path:'termine', component: TermineComponent},
-      {path:'stundenplan', component: StundenplanComponent},
-      {path:'raumplaner', component: RaumplanerComponent},
-      {path:'impressum', component: ImpressumComponent},
-      {path:'datenschutz', component: DatenschutzComponent},
-      {path:'faq', component: FaqComponent},
-      {path:'dsgvo', component: DsgvoComponent},
-      {path:'settings', component: SettingsComponent},
-      {path:'signup', component: SignupComponent},
-      {path:'dashboard', component: DashboardComponent},
-      {path: '**', component: NotFoundComponent }
-    ]),
+    { path: '', component: StartComponent },
+    { path: 'login', component: LoginComponent },
+    { path: 'termine', component: TermineComponent },
+    { path: 'stundenplan', component: StundenplanComponent },
+    { path: 'raumplaner', component: RaumplanerComponent },
+    { path: 'impressum', component: ImpressumComponent },
+    { path: 'datenschutz', component: DatenschutzComponent },
+    { path: 'faq', component: FaqComponent },
+    { path: 'dsgvo', component: DsgvoComponent },
+    { path: 'settings', component: SettingsComponent },
+    { path: 'signup', component: SignupComponent },
+    { path: 'dashboard', component: DashboardComponent },
+    { path: '**', component: NotFoundComponent }
+], { relativeLinkResolution: 'legacy' }),
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production})
   ],
   providers: [
